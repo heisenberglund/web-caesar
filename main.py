@@ -27,7 +27,15 @@ form = """
         </head>
         <body>
             <form method="post">
+                <label>Rotate by:
+                </label>
+                <input type="text" value="0"/>
+                </br>
                 <input type="text" id="textarea" />
+                </br>
+                <input type="submit" value="Submit"  
+                 />
+
             </form>
         </body>
     </html>
