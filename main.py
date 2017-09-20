@@ -1,7 +1,12 @@
-from flask import Flask
+from flask import Flask, request
+from caesar import rotate_string
 
 app =  Flask(__name__)
 app.config['DEBUG'] = True
+
+@app.route("/")
+def enrypt(rot,text):
+
 
 form = """
     <!DOCTYPE html>
@@ -29,9 +34,9 @@ form = """
             <form method="post">
                 <label>Rotate by:
                 </label>
-                <input type="text" value="0"/>
+                <input name="rot" type="text" value="0"/>
                 </br>
-                <input type="text" id="textarea" />
+                <input name="text" type="text" id="textarea" />
                 </br>
                 <input type="submit" value="Submit"  
                  />
