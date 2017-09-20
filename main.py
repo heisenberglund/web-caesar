@@ -4,8 +4,6 @@ from caesar import rotate_string
 app =  Flask(__name__)
 app.config['DEBUG'] = True
 
-@app.route("/")
-def enrypt(rot,text):
 
 
 form = """
@@ -48,6 +46,10 @@ form = """
 
 @app.route("/")
 def index():
+    return form
+
+@app.route("/")
+def encrypt():
     return form
 
 app.run()
