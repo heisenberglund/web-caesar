@@ -34,7 +34,7 @@ form = """
                 </label>
                 <input name="rot" type="text" value="0"/>
                 </br>
-                <input name="text" type="text" id="textarea" />
+                <input name="text" id="textarea" ></textarea>
                 </br>
                 <input type="submit" value="Submit"  
                  />
